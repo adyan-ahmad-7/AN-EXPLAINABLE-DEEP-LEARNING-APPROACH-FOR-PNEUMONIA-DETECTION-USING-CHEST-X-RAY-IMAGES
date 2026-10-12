@@ -171,26 +171,6 @@ The thesis describes saving outputs from experimental runs in Kaggle, including:
 - LRP conservation-error measurements and comparative metric tables
 
 The actual notebook names, saved artifact paths, and package lock file should be documented in this repository once the executable experiment files are added.
-
-## Reproducibility
-
-The thesis documents the main model settings and evaluation design, but this README alone is not a runnable implementation. To reproduce the experiment, the repository should include the original training and evaluation notebook or scripts, a dependency file with exact tested versions, and instructions for downloading and arranging the dataset.
-
-Suggested repository organization:
-
-```text
-.
-├── README.md
-├── notebooks/              # Add the experiment notebook(s)
-├── src/                    # Add preprocessing, training, XAI, and evaluation code
-├── results/                # Add metrics, confidence intervals, and statistical tests
-├── figures/                # Add ROC curves, confusion matrices, and explanation maps
-├── requirements.txt        # Pin versions from the tested environment
-└── CITATION.cff            # Optional citation metadata
-```
-
-This is a suggested structure, not a claim that these files are included. Do not commit the full dataset unless its license and redistribution terms permit it; link to the original Kaggle dataset instead.
-
 ## Limitations
 
 - The experiment uses one public pediatric CXR dataset from a single source.
